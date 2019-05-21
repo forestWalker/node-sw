@@ -5,7 +5,7 @@ Simple app consisting of 3 parts:
 * `SwServer` which can fire up an Express server serving a REST api to handle the requests and pass them to the `SwService`
 * `SwCli` which is a command line interface using the `SwService` to provide console output
 
-The app has a CLI entry point `starwars.js` which shebang support to run locally
+The app has a CLI entry point `starwars.js` with shebang support to run locally
 
 ## Installation
 
@@ -42,7 +42,7 @@ Can be started with:
 ./starwars.js serve
 ```
 
-The server will be run on the port 4000 and will provide the following endpoints:
+The server will listen on port 4000 by default but can be overridden with environment variable `PORT`. It provides the following endpoints:
 
 **Get characters from episode**
 ```
@@ -69,4 +69,4 @@ The server will be run on the port 4000 and will provide the following endpoints
 
 ## WebApp
 
-When the server is running the webapp is available at `http(s)://<domain>:4000/` and will connect to the server's API endpoint to fetch content.
+When the server is running the webapp is available at `http(s)://<domain>:<port>/` (locally http://localhost:4000/) and will connect to the server's API endpoint to fetch content.
