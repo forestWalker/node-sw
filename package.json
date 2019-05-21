@@ -8,7 +8,8 @@
     "characters:return": "node starwars.js characters \"Return Of The Jedi\"",
     "characters:matching-hope-ep1": "node starwars.js matchingCharacters \"A New Hope\" \"The Phantom Menace\"",
     "characters:tall-200": "node starwars.js tall 200",
-    "serve": "node starwars.js serve",
+    "serve": "npm start",
+    "start": "node starwars.js serve",
     "watch": "npx babel --watch app/src --out-dir app/public --presets react-app/prod "
   },
   "keywords": [
