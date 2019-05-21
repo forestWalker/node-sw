@@ -1,0 +1,28 @@
+{
+  "name": "node-sw",
+  "version": "1.0.0",
+  "description": "Simple GraphQL query tool sample",
+  "main": "index.js",
+  "scripts": {
+    "characters:hope": "node starwars.js characters \"A New Hope\"",
+    "characters:return": "node starwars.js characters \"Return Of The Jedi\"",
+    "characters:matching-hope-ep1": "node starwars.js matchingCharacters \"A New Hope\" \"The Phantom Menace\"",
+    "characters:tall-200": "node starwars.js tall 200",
+    "serve": "node starwars.js serve",
+    "watch": "npx babel --watch app/src --out-dir app/public --presets react-app/prod "
+  },
+  "keywords": [
+    "graphql",
+    "starwars",
+    "commandline"
+  ],
+  "author": "Viktor Leinvander",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "commander": "^2.20.0",
+    "express": "^4.17.0",
+    "node-fetch": "^2.6.0"
+  }
+}
